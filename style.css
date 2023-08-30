@@ -1,0 +1,26 @@
+body {
+    background-color: rgb(33, 60, 133);
+    font-family: "Poppins", sans-serif;
+    display: grid;
+}
+
+.hey {
+    font-weight: bold;
+    font-size: 2em;
+}
+
+.boxes {
+    width: 200px;
+    height: 200px;
+    margin: 50px;
+    background-color: rgb(102, 130, 204);
+    border: 10px;
+    padding: 10px;
+    border-color: aliceblue;
+    border-radius: 10px;
+    color: azure;
+    text-align: center;
+    vertical-align: middle;
+    box-shadow: 0px 10px 15px white;
+    display: inline-block;
+}
