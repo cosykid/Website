@@ -1,26 +1,49 @@
-body {
-    background-color: rgb(33, 60, 133);
-    font-family: "Poppins", sans-serif;
-    display: grid;
+@font-face {
+    font-family: TheRock;
+    src: url(TheRock.ttf);
 }
 
-.hey {
-    font-weight: bold;
-    font-size: 2em;
+body {
+    background-color: #fec8df;
+    /*
+    font-family: "Poppins", sans-serif;*/
+    font-family: TheRock;
+    font-size: 1.5rem;
+    display: grid;
 }
 
 .boxes {
     width: 200px;
     height: 200px;
     margin: 50px;
-    background-color: rgb(102, 130, 204);
-    border: 10px;
+    background-color: #36b9ea;
+    color: azure;
     padding: 10px;
+
+    border: 10px;
     border-color: aliceblue;
     border-radius: 10px;
-    color: azure;
+
     text-align: center;
     vertical-align: middle;
-    box-shadow: 0px 10px 15px white;
-    display: inline-block;
+    box-shadow: 0px 10px 15px #fefb58;
+    position: relative;
+}
+
+.boxout {
+    display: flex;
+}
+
+.boxes:hover {
+    text-decoration: underline;
+}
+
+.boxes > * {
+    font-weight: bold;
+    font-size: 2em;
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
