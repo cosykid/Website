@@ -4,12 +4,19 @@
 }
 
 body {
-    background-color: #fec8df;
+    background: url(Bocchi.png);
+    background-size: contain;
+    background-repeat: round;
     /*
     font-family: "Poppins", sans-serif;*/
     font-family: TheRock;
     font-size: 1.5rem;
-    display: grid;
+}
+
+img {
+    position: absolute;
+    width: 100%;
+    border: none;
 }
 
 .boxes {
@@ -17,17 +24,24 @@ body {
     height: 200px;
     margin: 50px;
     background-color: #36b9ea;
-    color: azure;
+    background-color: #fec8df;
+    color: rgb(38, 7, 48);
     padding: 10px;
 
     border: 10px;
     border-color: aliceblue;
     border-radius: 10px;
 
+    font-size: larger;
     text-align: center;
     vertical-align: middle;
     box-shadow: 0px 10px 15px #fefb58;
+    box-shadow: 0px 10px 15px #36b9ea;
     position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .boxout {
@@ -36,14 +50,4 @@ body {
 
 .boxes:hover {
     text-decoration: underline;
-}
-
-.boxes > * {
-    font-weight: bold;
-    font-size: 2em;
-    position: absolute;
-    text-align: center;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
 }
